@@ -1,0 +1,404 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/0-NETFLIX/00-testsNetflix.feature:5",
+      "name": "validarTituloTest",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "URL",
+                "value": "https://www.netflix.com/ar/"
+              }
+            ],
+            "location": "features/steps/steps_general.py:5"
+          },
+          "name": "El usuario navega a la p\u00e1gina: \"https://www.netflix.com/ar/\"",
+          "result": {
+            "duration": 6.712242603302002,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testNetflix.py:7"
+          },
+          "name": "Espero a que cargue la pagina",
+          "result": {
+            "duration": 0.065338134765625,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:8",
+          "match": {
+            "arguments": [
+              {
+                "name": "TITLE",
+                "value": "Netflix Argentina: Ve series online, ve pel\u00edculas online"
+              }
+            ],
+            "location": "features/steps/step_testNetflix.py:13"
+          },
+          "name": "Valido titulo: \"Netflix Argentina: Ve series online, ve pel\u00edculas online\"",
+          "result": {
+            "duration": 0.005608320236206055,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "test00"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/0-NETFLIX/00-testsNetflix.feature:11",
+      "name": "startSessionPageTest",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:12",
+          "match": {
+            "arguments": [
+              {
+                "name": "URL",
+                "value": "https://www.netflix.com/ar/"
+              }
+            ],
+            "location": "features/steps/steps_general.py:5"
+          },
+          "name": "El usuario navega a la p\u00e1gina: \"https://www.netflix.com/ar/\"",
+          "result": {
+            "duration": 1.0899913311004639,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testNetflix.py:21"
+          },
+          "name": "El usuario hace click en Iniciar Sesi\u00f3n",
+          "result": {
+            "duration": 5.097380876541138,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:14",
+          "match": {
+            "arguments": [
+              {
+                "name": "TITLE",
+                "value": "Netflix"
+              }
+            ],
+            "location": "features/steps/step_testNetflix.py:13"
+          },
+          "name": "Valido titulo: \"Netflix\"",
+          "result": {
+            "duration": 0.005994319915771484,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:15",
+          "match": {
+            "arguments": [
+              {
+                "name": "TXT",
+                "value": "Inicia sesi\u00f3n"
+              }
+            ],
+            "location": "features/steps/step_testNetflix.py:27"
+          },
+          "name": "Valido texto: \"Inicia sesi\u00f3n\"",
+          "result": {
+            "duration": 2.101649284362793,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/0-NETFLIX/00-testsNetflix.feature:16",
+          "match": {
+            "arguments": [
+              {
+                "name": "TXT",
+                "value": "Iniciar sesi\u00f3n con Facebook"
+              }
+            ],
+            "location": "features/steps/step_testNetflix.py:27"
+          },
+          "name": "Valido texto: \"Iniciar sesi\u00f3n con Facebook\"",
+          "result": {
+            "duration": 2.0973360538482666,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "test01"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/0-NETFLIX/00-testsNetflix.feature:2",
+  "name": "Netflix",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/0-NETFLIX/01-testLoginJoin.feature:16",
+      "name": "loginToNetflixErrorTest -- @1.1 ",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "URL",
+                "value": "https://www.netflix.com/ar/"
+              }
+            ],
+            "location": "features/steps/steps_general.py:5"
+          },
+          "name": "El usuario navega a la p\u00e1gina: \"https://www.netflix.com/ar/\"",
+          "result": {
+            "duration": 1.3302984237670898,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testNetflix.py:21"
+          },
+          "name": "El usuario hace click en Iniciar Sesi\u00f3n",
+          "result": {
+            "duration": 2.104586601257324,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:8",
+          "match": {
+            "arguments": [
+              {
+                "name": "STR",
+                "value": "BmOxGGL@gmail.com"
+              }
+            ],
+            "location": "features/steps/step_testLoginJoin.py:9"
+          },
+          "name": "Ingresa el siguiente email: \"BmOxGGL@gmail.com\"",
+          "result": {
+            "duration": 0.40600013732910156,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:9",
+          "match": {
+            "arguments": [
+              {
+                "name": "STR",
+                "value": "holamundo"
+              }
+            ],
+            "location": "features/steps/step_testLoginJoin.py:15"
+          },
+          "name": "Ingresa la siguiente contrase\u00f1a: \"holamundo\"",
+          "result": {
+            "duration": 0.43599939346313477,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:21"
+          },
+          "name": "Desmarca el bot\u00f3n de \"Recuerdame\"",
+          "result": {
+            "duration": 0.08999347686767578,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:27"
+          },
+          "name": "Realiza click en \"Iniciar Sesi\u00f3n\"",
+          "result": {
+            "duration": 0.10900187492370605,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:12",
+          "match": {
+            "arguments": [
+              {
+                "name": "MSG",
+                "value": "No podemos encontrar una cuenta con esta direcci\u00f3n de email. Reint\u00e9ntalo o crea una cuenta nueva."
+              }
+            ],
+            "location": "features/steps/step_testLoginJoin.py:33"
+          },
+          "name": "Valida mensaje de error: \"No podemos encontrar una cuenta con esta direcci\u00f3n de email. Reint\u00e9ntalo o crea una cuenta nueva.\"",
+          "result": {
+            "duration": 2.0806679725646973,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:39"
+          },
+          "name": "Valida boton \"Recuerdame\" seleccionado",
+          "result": {
+            "duration": 0.018002033233642578,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "test02"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/0-NETFLIX/01-testLoginJoin.feature:19",
+      "name": "fakeEmailTest",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:20",
+          "match": {
+            "arguments": [
+              {
+                "name": "URL",
+                "value": "https://www.netflix.com/ar/"
+              }
+            ],
+            "location": "features/steps/steps_general.py:5"
+          },
+          "name": "El usuario navega a la p\u00e1gina: \"https://www.netflix.com/ar/\"",
+          "result": {
+            "duration": 1.1386253833770752,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:50"
+          },
+          "name": "El usuario ingresa un email en el LandingPage",
+          "result": {
+            "duration": 0.24500608444213867,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:57"
+          },
+          "name": "El usuario hace click en \"Comenzar\"",
+          "result": {
+            "duration": 0.12399959564208984,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/0-NETFLIX/01-testLoginJoin.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_testLoginJoin.py:63"
+          },
+          "name": "Es dirigido a la pagina de registro",
+          "result": {
+            "duration": 2.0792906284332275,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "test03"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/0-NETFLIX/01-testLoginJoin.feature:1",
+  "name": "Inicio de sesion",
+  "status": "passed",
+  "tags": []
+}
+]
